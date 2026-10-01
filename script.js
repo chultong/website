@@ -201,11 +201,11 @@
     header.classList.toggle('scrolled', scrollTop > 24);
     progress.style.transform = 'scaleX(' + (scrollable > 0 ? Math.min(1, scrollTop / scrollable) : 0) + ')';
     const point = scrollTop + header.offsetHeight + Math.min(160, window.innerHeight * 0.2);
-    const current = sections.filter((section) => section.offsetTop <= point).at(-1)?.dataset.navSection;
+    const current = document.body.dataset.page || sections.filter((section) => section.offsetTop <= point).at(-1)?.dataset.navSection;
     navLinks.forEach((link) => {
       const active = link.dataset.navLink === current;
       link.classList.toggle('active', active);
-      if (active) link.setAttribute('aria-current', 'location');
+      if (active) link.setAttribute('aria-current', new URL(link.href).pathname === window.location.pathname ? 'page' : 'location');
       else link.removeAttribute('aria-current');
     });
   };
@@ -236,7 +236,7 @@
 
   const copyButton = document.querySelector('.copy-email');
   const copyStatus = document.querySelector('.copy-status');
-  copyButton.addEventListener('click', async () => {
+  copyButton?.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(copyButton.dataset.email);
       copyStatus.textContent = '이메일 주소를 복사했습니다.';

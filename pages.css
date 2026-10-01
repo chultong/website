@@ -1,0 +1,255 @@
+.company-dropdown {
+  width: 260px;
+}
+
+.mobile-nav-link[aria-current="page"] {
+  color: var(--mint);
+}
+
+.catalog-hero {
+  padding: calc(var(--header-h) + 24px) 0 40px;
+  color: var(--white);
+  background:
+    radial-gradient(ellipse at 85% 10%, rgba(53, 108, 255, 0.14), transparent 60%),
+    var(--navy);
+}
+
+.catalog-hero .breadcrumbs {
+  margin-bottom: 24px;
+}
+
+.catalog-hero .eyebrow {
+  margin-bottom: 18px;
+  font-size: 11px;
+}
+
+.catalog-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 4.6vw, 64px);
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.055em;
+}
+
+.catalog-intro {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: #afc1d7;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.catalog-section {
+  padding: 48px 0 64px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.catalog-card:hover {
+  border-color: #7e9abe;
+  box-shadow: 0 8px 24px rgba(7, 17, 28, 0.06);
+}
+
+.catalog-card--featured {
+  background: #edf7f1;
+  border-color: #b6d9c7;
+}
+
+.industry-catalog-section {
+  padding-top: 32px;
+}
+
+.industry-catalog-section .catalog-card {
+  padding: 22px;
+}
+
+.industry-catalog-section .catalog-card h2 {
+  margin: 14px 0 10px;
+}
+
+.industry-catalog-section .catalog-card p {
+  margin-bottom: 14px;
+}
+
+.catalog-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.catalog-number {
+  color: #4262a0;
+  font-size: 10px;
+  font-weight: 650;
+  line-height: 1.6;
+  letter-spacing: 0.09em;
+}
+
+.catalog-badge {
+  padding: 4px 7px;
+  color: #53647a;
+  background: #edf1f6;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.catalog-card h2 {
+  margin: 18px 0 12px;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
+}
+
+.catalog-card p {
+  margin: 0 0 20px;
+  color: #65717c;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.catalog-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 32px;
+  margin-top: auto;
+  color: #2457cc;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.company-switcher .solution-switcher-inner {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.product-switcher .solution-switcher-inner {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-detail-wrap {
+  max-width: 900px;
+}
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 56px;
+}
+
+.contact-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 36px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.contact-panel h2,
+.contact-guide > h2 {
+  margin: 18px 0 20px;
+  font-size: 25px;
+  font-weight: 630;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+
+.contact-panel .contact-email {
+  color: #2457cc;
+  font-size: clamp(16px, 2.1vw, 28px);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.contact-panel > p,
+.contact-guide p {
+  margin: 20px 0 28px;
+  color: #65717c;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.contact-panel .copy-email {
+  margin-top: 12px;
+  color: #52677e;
+}
+
+.contact-panel .copy-status {
+  color: #276850;
+}
+
+.contact-guide ol {
+  display: grid;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-guide li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-guide li > span {
+  color: #4262a0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.contact-guide h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-guide li p {
+  margin: 10px 0 0;
+}
+
+@media (max-width: 960px) {
+  .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .company-catalog { grid-template-columns: minmax(0, 1fr); }
+  .contact-page-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+}
+
+@media (max-width: 640px) {
+  .catalog-hero { padding-top: calc(var(--header-h) + 20px); padding-bottom: 32px; }
+  .catalog-hero h1 { font-size: clamp(32px, 8.5vw, 44px); }
+  .catalog-hero .eyebrow { font-size: 10px; letter-spacing: 0.12em; }
+  .catalog-intro { font-size: 14px; }
+  .catalog-section { padding-block: 32px 44px; }
+  .catalog-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .catalog-card { padding: 24px; }
+  .catalog-card h2 { font-size: 23px; }
+  .contact-panel { padding: 24px; }
+  .contact-panel h2, .contact-guide > h2 { font-size: 23px; }
+}
+
+@media print {
+  .catalog-hero { padding-top: 32px; }
+  .catalog-section { padding-block: 24px; }
+}
