@@ -21,7 +21,7 @@ python3 -m http.server 4173
 - `products.html`, `product-*.html` — 제품 목록과 제품별 상세 소개
 - `contact.html` — 연락처·고객문의
 - `styles.css` — 반응형 디자인 및 모션
-- `solutions.css` — 솔루션 상세 페이지, 제조·물류 소개 및 사진 영역
+- `solutions.css` — 산업별 솔루션 상세 페이지와 사진 영역의 공통 디자인
 - `pages.css` — 회사소개, 전체 솔루션, 제품, 연락처 페이지
 - `script.js` — 메뉴, 탭, 스크롤 인터랙션
 - `assets/` — 히어로 비주얼 및 파비콘
@@ -54,17 +54,27 @@ python3 -m http.server 4173
 ## 솔루션 상세 페이지
 
 - `solution-manufacturing.html` — 제조·물류 소개, 주요 과제와 Vaidio 솔루션, Vaidio 선택 이유, 활용 분야 및 도입 문의
-- `solution-healthcare.html` — 병원·의료 (상세 내용 준비 중)
-- `solution-retail.html` — 유통·대형마트 (상세 내용 준비 중)
+- `solution-healthcare.html` — 환자·의료진 안전, 보호구·위생, 대기 동선과 의료시설 운영
+- `solution-retail.html` — 손실 예방, 계산대·출구 동선, 고객 응대와 매장 물류
 - `solution-energy.html` — 발전·에너지 (상세 내용 준비 중)
-- `solution-smart-city.html` — 스마트시티 (상세 내용 준비 중)
+- `solution-smart-city.html` — 교통 흐름, 보행자 안전, 도로 위험 대응과 사건 분석
 - `solution-public.html` — 공공기관 (상세 내용 준비 중)
 
-나머지 5개 페이지는 `.solution-placeholder` 섹션을 교체하거나 해당 위치에 새 섹션을 추가해 확장합니다. 모든 페이지는 빌드 도구 없이 직접 접속할 수 있는 정적 HTML입니다. 공통 메뉴를 변경할 때는 모든 HTML 파일의 상단·푸터 메뉴를 함께 수정합니다.
+발전·에너지와 공공기관 페이지는 `.solution-placeholder` 섹션을 교체하거나 해당 위치에 새 섹션을 추가해 확장합니다. 모든 페이지는 빌드 도구 없이 직접 접속할 수 있는 정적 HTML입니다. 공통 메뉴를 변경할 때는 모든 HTML 파일의 상단·푸터 메뉴를 함께 수정합니다.
 
 제조·물류 상세 페이지는 현장의 활용 모습을 먼저 확인하도록 `사진 중심 활용 분야 → 주요 과제와 해결 방법 → Vaidio 선택 이유 → 철통의 도입 지원 → 고객문의` 순서로 배치했습니다. 활용 분야의 이미지 높이는 줄이고 각 사진의 주요 피사체가 보이도록 조정했습니다. 과제는 안전보호구(PPE), 제품 결함, 재고·야드 운영의 3가지이며, 각 과제에 대응하는 제품 기능을 함께 보여줍니다. 모바일에서는 과제 다음에 해결 방법이 나오도록 동일한 순서를 유지합니다.
 
 Vaidio의 기능과 수치(30+ AI 모델, 10년+ 학습, 3,000+ 객체)는 [제조사 공식 제조 솔루션 소개](https://www.vaidio.ai/solutions/manufacturing)를 기준으로 표시했습니다. 제조사의 제품 설명이며 철통의 자체 제품 성능이나 실적을 의미하지 않습니다. 즉시 ROI, 최고 정확도, 무조건적인 호환성이나 규정 준수를 보장하지 않으며, 실제 기능·호환성·효과는 제품 버전과 도입 환경에 따라 확인합니다.
+
+병원·의료, 유통·대형마트와 스마트시티도 제조·물류와 같은 `활용 분야 → 주요 과제와 Vaidio 솔루션 → Vaidio 선택 이유 → 철통의 도입 지원 → 도입 문의` 순서와 공통 스타일을 사용합니다. 각각 활용 카드 4개, 과제·해결 방법 3개와 제품 강점 4개로 구성하며, 사진은 동일한 간결한 높이를 유지합니다. 상단에는 섹션 이동 버튼을 추가하지 않았습니다.
+
+참고 자료 및 제품 기능 확인:
+
+- 병원·의료: [Futec 참고 페이지](https://www.futecsolutions.com/solution-healthcare.html), [Vaidio 공식 소개](https://www.vaidio.ai/solutions/healthcare)
+- 유통·대형마트: [Futec 참고 페이지](https://www.futecsolutions.com/solution-retail.html), [Vaidio 공식 소개](https://www.vaidio.ai/solutions/retail)
+- 스마트시티: [Futec 참고 페이지](https://www.futecsolutions.com/solution-smartcities.html), [Vaidio 공식 소개](https://www.vaidio.ai/solutions/smart-cities)
+
+의료 영상분석은 진단·치료를 대체하는 용도로 소개하지 않으며, 개인정보 처리·열람·보관 정책을 별도로 검토하도록 안내합니다. 매장의 의심 행동 알림은 범죄나 미결제를 확정하지 않으며, 인물 식별과 결제 시스템 연동은 별도 검토 대상으로 명시했습니다. 도시 신호 제어는 실제 시스템과 운영기관의 연동·승인 범위를 검토하도록 안내하며, 자동 단속이나 법적 판단을 보장하지 않습니다.
 
 ### 제조·물류 사진
 
@@ -73,6 +83,18 @@ Vaidio의 기능과 수치(30+ AI 모델, 10년+ 학습, 3,000+ 객체)는 [제�
 `assets/manufacturing-logistics.jpg`는 참고 페이지의 `assets/img/vaidio/hero_manufacturing.png`에서 가져온 이미지를 웹용 JPEG로 최적화한 파일입니다. `solutions.css`의 `.photo-crop--*` 클래스로 공장 전경, 작업자, 생산라인, 생산설비를 각각 보여줍니다. 같은 파일을 재사용하므로 사진마다 별도 이미지 다운로드는 발생하지 않습니다.
 
 이미지 사용권·재사용 허가는 별도로 확인되어 있지 않으므로, 공개 전에 권리자의 사용 허가를 확인하거나 보유 이미지로 교체해야 합니다. 페이지 문구는 철통의 사업 방향에 맞게 새로 작성했으며, 참고 사이트의 제품 성능 수치나 공식 파트너십을 철통의 실적으로 표시하지 않습니다.
+
+### 추가 산업별 사진
+
+`assets/healthcare.jpg`와 `assets/retail.jpg`는 Futec 참고 페이지의 `hero_healthcare.png`, `hero_retail.png`를 JPEG로 최적화한 파일이며, `assets/smart-city.jpg`는 `hero_smartcities.jpg`의 웹용 사본입니다. 병원과 매장 사진은 `.photo-crop--hospital-*`, `.photo-crop--retail-*`로 장면별로 나눠 표시하며 원본 콜라주 전체를 반복해서 보여주지 않습니다. 이 참고 이미지들도 공개 전에 재사용 권한을 확인하거나 자체 이미지로 교체해야 합니다.
+
+스마트시티 활용 카드의 무료 Unsplash 사진 출처:
+
+- `assets/city-traffic.jpg`: [Justin Shen — 교차로 항공 사진](https://unsplash.com/photos/an-aerial-view-of-a-highway-intersection-in-a-city-uQCbc_H-xCY)
+- `assets/city-pedestrians.jpg`: [Ryoji Iwata — 보행자 이동 사진](https://unsplash.com/photos/aerial-view-photography-of-people-crossing-road-wuCNi2XfBeE)
+- `assets/city-road.jpg`: [David Emrich — 야간 도시 도로 사진](https://unsplash.com/photos/a-city-street-filled-with-lots-of-traffic-at-night-b6O0bMTGGE0)
+
+사진은 각 활용 분야의 상황을 설명하는 이미지이며 철통의 구축 실적이나 고객 사례를 의미하지 않습니다.
 
 ## 문의 이메일
 

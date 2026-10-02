@@ -61,6 +61,97 @@
   --photo-focus-y: -74.154%;
 }
 
+/* Industry-specific windows from the healthcare and retail source collages. */
+.photo-crop--hospital-team {
+  --photo-ratio: 694 / 425;
+  --photo-width: 276.657%;
+  --photo-left: -174.352%;
+  --photo-top: -9.412%;
+  --photo-focus-y: -19.423%;
+}
+
+.photo-crop--hospital-security {
+  --photo-ratio: 738 / 448;
+  --photo-width: 260.163%;
+  --photo-left: -60.976%;
+  --photo-top: -2.232%;
+  --photo-focus-y: -17.692%;
+}
+
+.photo-crop--hospital-ppe {
+  --photo-ratio: 674 / 442;
+  --photo-width: 284.866%;
+  --photo-left: -1.187%;
+  --photo-top: -190.724%;
+  --photo-focus-y: -76.923%;
+}
+
+.photo-crop--hospital-waiting {
+  --photo-ratio: 770 / 334;
+  --photo-width: 249.351%;
+  --photo-left: -89.610%;
+  --photo-top: -145.210%;
+  --photo-focus-y: -50.154%;
+}
+
+.photo-crop--retail-store {
+  --photo-ratio: 663 / 417;
+  --photo-width: 289.593%;
+  --photo-left: -133.032%;
+  --photo-top: -203.837%;
+  --photo-focus-y: -81.423%;
+}
+
+.photo-crop--retail-merchandise {
+  --photo-ratio: 770 / 335;
+  --photo-width: 249.351%;
+  --photo-left: -100.000%;
+  --photo-top: -144.776%;
+  --photo-focus-y: -50.192%;
+}
+
+.photo-crop--retail-checkout {
+  --photo-ratio: 694 / 450;
+  --photo-width: 276.657%;
+  --photo-left: -174.352%;
+  --photo-top: -2.222%;
+  --photo-focus-y: -17.692%;
+}
+
+.photo-crop--retail-service {
+  --photo-ratio: 441 / 441;
+  --photo-width: 435.374%;
+  --photo-left: -94.104%;
+  --photo-top: -191.610%;
+  --photo-focus-y: -77.308%;
+}
+
+.photo-crop--retail-warehouse {
+  --photo-ratio: 770 / 450;
+  --photo-width: 249.351%;
+  --photo-left: -53.896%;
+  --photo-top: -2.222%;
+  --photo-focus-y: -17.308%;
+}
+
+.industry-photo {
+  position: relative;
+  aspect-ratio: 710 / 444;
+  overflow: hidden;
+  background: var(--navy-2);
+}
+
+.industry-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.application-card .industry-photo {
+  aspect-ratio: 12 / 5;
+}
+
 .manufacturing-feature {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -204,7 +295,8 @@
   border-radius: 12px;
 }
 
-.detail-hero-photo .photo-crop {
+.detail-hero-photo .photo-crop,
+.detail-hero-photo .industry-photo {
   border-radius: 5px;
 }
 
