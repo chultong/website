@@ -158,6 +158,20 @@ svg {
   object-fit: contain;
 }
 
+.site-header .brand-logo {
+  height: 40px;
+}
+
+.site-header .brand-wordmark {
+  display: block;
+  flex-shrink: 0;
+  width: 110px;
+  height: auto;
+  /* g의 내려오는 획을 고려해 글자 몸통을 로고 중앙에 맞춥니다. */
+  transform: translateY(2px);
+  object-fit: contain;
+}
+
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -479,7 +493,8 @@ svg {
   padding: 0 24px;
   border-radius: 5px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 550;
+  line-height: 1.5;
   transition: transform 0.25s var(--ease), background 0.25s, box-shadow 0.25s;
 }
 
@@ -501,27 +516,73 @@ svg {
 .button-primary:hover {
   background: #d6ff77;
   box-shadow: 0 15px 42px rgba(200, 255, 76, 0.2);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .text-link {
+  --text-link-accent: #1b6657;
+  --text-link-rule: rgba(27, 102, 87, 0.3);
   display: inline-flex;
-  gap: 8px;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  max-width: 100%;
   padding: 12px 0;
-  color: rgba(255, 255, 255, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--ink);
   font-size: 14px;
-  font-weight: 600;
-  transition: color 0.2s, border-color 0.2s;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: -0.015em;
 }
 
-.text-link span {
-  color: var(--mint);
+.text-link--light {
+  --text-link-accent: var(--mint);
+  --text-link-rule: rgba(172, 205, 199, 0.4);
+  color: #dce7ef;
 }
 
-.text-link:hover {
-  color: var(--white);
-  border-color: var(--mint);
+.text-link-label {
+  min-width: 0;
+  text-decoration-line: underline;
+  text-decoration-color: var(--text-link-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+  transition: text-decoration-color 0.2s;
+}
+
+.link-arrow,
+.text-link-arrow {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s var(--ease);
+}
+
+.text-link-arrow {
+  color: var(--text-link-accent);
+}
+
+.button .link-arrow {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.6;
+}
+
+.text-link:is(:hover, :focus-visible) .text-link-label {
+  text-decoration-color: var(--text-link-accent);
+}
+
+.text-link:is(:hover, :focus-visible) .text-link-arrow {
+  transform: translate(2px, -2px);
+}
+
+.text-link:focus-visible {
+  outline-color: var(--text-link-accent);
 }
 
 .hero-stats {
@@ -1177,19 +1238,16 @@ svg {
   padding-top: 8px;
   color: var(--mint);
   font-size: 13px;
-  font-weight: 650;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 .solution-ops .product-contact {
   color: #2457cc;
 }
 
-.product-contact:hover span {
+.product-contact:is(:hover, :focus-visible) .link-arrow {
   transform: translate(2px, -2px);
-}
-
-.product-contact span {
-  transition: transform 0.2s;
 }
 
 .industries {
@@ -2045,6 +2103,8 @@ svg {
   .container { width: calc(100% - 36px); }
   .brand { font-size: 14px; }
   .brand-logo { height: 34px; }
+  .site-header .brand-logo { height: 36px; }
+  .site-header .brand-wordmark { width: 102px; }
   .hero { min-height: 740px; }
   .hero::after {
     background:
@@ -2059,7 +2119,8 @@ svg {
   .hero-description { max-width: 95%; margin-top: 25px; font-size: 14px; line-height: 1.75; }
   .hero-actions { gap: 20px; flex-wrap: wrap; margin-top: 32px; }
   .button { gap: 17px; min-height: 52px; padding: 0 18px; font-size: 13px; }
-  .text-link { font-size: 12px; }
+  .text-link { font-size: 13px; }
+  .text-link-label { text-underline-offset: 7px; }
   .hero-stats { right: 0; bottom: 24px; left: 0; }
   .hero-stats div { min-width: 0; flex: 1; padding: 14px 10px; }
   .hero-stats strong { font-size: clamp(12px, 3.4vw, 16px); }
@@ -2134,6 +2195,8 @@ svg {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .text-link:is(:hover, :focus-visible) .text-link-arrow { transform: none; }
+  .product-contact:is(:hover, :focus-visible) .link-arrow { transform: none; }
   html { scroll-behavior: auto; }
   .hero-image { animation: none !important; }
   *, *::before, *::after {

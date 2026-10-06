@@ -10,9 +10,9 @@
     <meta property="og:description" content="철통의 문의 이메일은 abraham@chultong.com입니다. 솔루션 및 제품 도입에 관해 문의하세요." />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-    <link rel="stylesheet" href="styles.css?v=20261006-typography" />
+    <link rel="stylesheet" href="styles.css?v=20261007-design-polish" />
     <link rel="stylesheet" href="solutions.css?v=20261006-typography" />
-    <link rel="stylesheet" href="pages.css?v=20261006-typography" />
+    <link rel="stylesheet" href="pages.css?v=20261007-design-polish" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <title>연락처 · 고객문의 | CHULTONG</title>
     <noscript><style>
@@ -20,7 +20,7 @@
         @media (max-width: 960px) {
         .desktop-nav { display: flex; gap: 14px; margin: 0; }
         .nav-link { font-size: 13px; }
-        .header-inner > .brand span { display: none; }
+        .header-inner > .brand .brand-wordmark { display: none; }
         .nav-link.nav-contact { min-height: 36px; padding: 0 8px; gap: 4px; }
         .nav-contact svg { width: 12px; }
         }
@@ -33,7 +33,7 @@
     </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.svg" alt="" width="414" height="562" /><img class="brand-wordmark" src="assets/chultong-wordmark-white.svg" alt="Chultong" width="537" height="132" /></a>
         <nav class="desktop-nav" aria-label="주요 메뉴">
           <div class="nav-group">
             <div class="nav-group-heading">
@@ -132,27 +132,20 @@
         <div class="container">
           <nav class="breadcrumbs" aria-label="현재 위치">
             <a href="index.html">홈</a><span aria-hidden="true">/</span>
-            <a href="company.html">회사소개</a><span aria-hidden="true">/</span><span aria-current="page">연락처</span>
+            <span aria-current="page">문의</span>
           </nav>
           <p class="eyebrow light">CONTACT CHULTONG</p>
           <h1 id="page-title">함께 이야기해볼까요?</h1>
           <p class="catalog-intro">Vision AI, AI Ops, 통합 보안 시스템에 관한 문의를 기다립니다.<br />솔루션과 제품 도입 문의는 이메일로 보내주세요.</p>
         </div>
       </section>
-      <nav class="solution-switcher company-switcher" aria-label="회사소개 세부 페이지">
-        <div class="container solution-switcher-inner">
-          <a href="company-vision.html">비전</a>
-          <a href="company-greeting.html">인사말</a>
-          <a href="contact.html" aria-current="page">연락처</a>
-        </div>
-      </nav>
       <section class="catalog-section" aria-label="철통 연락처">
         <div class="container contact-page-grid">
           <div class="contact-panel"><span class="catalog-number">BUSINESS INQUIRIES</span>
             <h2>문의 이메일</h2>
             <a class="contact-email" href="mailto:abraham@chultong.com">abraham@chultong.com</a>
             <p>현장의 고민과 도입 환경을 알려주시면,<br />함께 검토할 수 있는 방향을 찾아보겠습니다.</p>
-            <a class="button button-primary" href="mailto:abraham@chultong.com">이메일 문의하기 <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="mailto:abraham@chultong.com">이메일 문의하기 <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12.5 12.5 3.5M4 3.5h8.5V12" /></svg></a>
             <button class="copy-email" type="button" data-email="abraham@chultong.com">이메일 주소 복사 <span aria-hidden="true">⧉</span></button>
             <span class="copy-status" role="status" aria-live="polite"></span>
           </div>
@@ -185,7 +178,7 @@
     </main>
     <footer class="site-footer">
       <div class="container footer-main">
-        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.svg" alt="" width="414" height="562" /><span>CHULTONG</span></a>
         <p>See clearly. Think ahead. Operate better.</p>
         <nav aria-label="푸터 메뉴">
           <a href="products.html">솔루션</a>

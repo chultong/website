@@ -26,9 +26,9 @@
 .catalog-hero h1 {
   margin: 0;
   font-size: clamp(42px, 4.6vw, 64px);
-  font-weight: 650;
-  line-height: 1.15;
-  letter-spacing: -0.055em;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
 }
 
 .catalog-intro {
@@ -327,7 +327,6 @@
 .visit-guide h2 { margin: 0 0 24px; font-size: 25px; font-weight: 630; line-height: 1.4; letter-spacing: -0.035em; }
 .visit-guide p { color: #65717c; font-size: 15px; line-height: 1.85; }
 .visit-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 28px; }
-.visit-actions .text-link { color: #2457cc; }
 .footer-details { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-block: 20px; color: #a2b5cd; font-size: 12px; line-height: 1.8; }
 .footer-details a:hover { color: var(--mint); }
 

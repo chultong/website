@@ -861,11 +861,6 @@
 
 .placeholder-actions .text-link {
   color: var(--ink);
-  border-color: var(--line);
-}
-
-.placeholder-actions .text-link span {
-  color: var(--blue);
 }
 
 .placeholder-actions .button-dark {
