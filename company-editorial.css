@@ -1,0 +1,497 @@
+/* Company message and philosophy pages. Shared site styles stay intact. */
+.company-editorial-page .company-story-hero {
+  padding: calc(var(--header-h) + 32px) 0 56px;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(72, 229, 191, 0.055), transparent 52%),
+    var(--navy);
+}
+
+.company-editorial-page .company-story-hero .breadcrumbs {
+  margin-bottom: 48px;
+}
+
+.company-story-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 64px;
+}
+
+.company-editorial-page .company-story-hero .eyebrow {
+  margin-bottom: 22px;
+  color: var(--mint);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.company-editorial-page .company-story-hero h1 {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 630;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+}
+
+.company-story-hero h1 > span {
+  color: var(--mint);
+}
+
+.company-editorial-page .company-story-hero .catalog-intro {
+  margin-top: 24px;
+  color: #b5c4d4;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.company-hero-emblem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  min-height: 238px;
+  padding: 32px 14px 24px;
+  border: 1px solid rgba(163, 188, 213, 0.15);
+  border-radius: 100px 100px 8px 8px;
+  background:
+    linear-gradient(rgba(159, 190, 227, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(159, 190, 227, 0.035) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.company-hero-emblem img {
+  width: 90px;
+  height: auto;
+  opacity: 0.62;
+}
+
+.company-hero-emblem > span {
+  color: #a3b8c7;
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.company-editorial-page .company-switcher {
+  background: #0b1b2a;
+  border-bottom-color: rgba(159, 190, 227, 0.18);
+}
+
+.company-editorial-page .company-switcher .solution-switcher-inner {
+  gap: 0;
+  padding-block: 0;
+}
+
+.company-editorial-page .company-switcher a {
+  min-height: 64px;
+  padding: 20px 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 13px;
+}
+
+.company-editorial-page .company-switcher [aria-current="page"] {
+  color: var(--mint);
+  box-shadow: inset 0 -2px var(--mint);
+}
+
+.company-purpose-section {
+  padding: 64px 0;
+}
+
+.company-editorial-page .company-purpose-grid {
+  gap: 24px;
+}
+
+.company-purpose {
+  min-width: 0;
+  padding: 30px 32px 32px;
+  background: var(--white);
+  border: 1px solid #d8e0e5;
+  border-radius: 12px;
+}
+
+.company-purpose-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.company-purpose-topline > span:first-child {
+  color: #466d68;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.company-purpose-topline > span:last-child {
+  color: #9aacb6;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.company-purpose h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  margin: 20px 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8eded;
+  font-size: 26px;
+  font-weight: 550;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.company-purpose h2 > span {
+  color: #617581;
+  font-size: 13px;
+  font-weight: 450;
+  letter-spacing: -0.015em;
+}
+
+.company-editorial-page .company-purpose-statement {
+  margin: 0;
+  color: #46545f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.company-purpose-statement > span {
+  color: #365e56;
+}
+
+.company-principles-section {
+  padding: 88px 0 96px;
+  color: var(--white);
+  background: var(--navy);
+}
+
+.company-principles-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.65fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.company-principles-intro {
+  position: sticky;
+  top: calc(var(--header-h) + 36px);
+}
+
+.company-principles-intro .eyebrow {
+  margin: 0 0 16px;
+  color: var(--mint);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.company-section-caption {
+  margin: 0;
+  color: #b6c5d1;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.company-principles-intro h2 {
+  margin: 28px 0 32px;
+  font-size: clamp(29px, 2.5vw, 36px);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+}
+
+.company-editorial-page .company-principles-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.company-editorial-page .company-principles-list li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: start;
+  gap: 24px;
+  padding: 28px 0;
+  border-top: 1px solid rgba(159, 190, 227, 0.22);
+}
+
+.company-editorial-page .company-principles-list li:last-child {
+  border-bottom: 1px solid rgba(159, 190, 227, 0.22);
+}
+
+.company-editorial-page .company-principles-list li > span {
+  padding-top: 5px;
+  color: var(--mint);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+}
+
+.company-editorial-page .company-principles-list h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.company-editorial-page .company-principles-list p {
+  margin: 0;
+  color: #b6c5d1;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: -0.01em;
+}
+
+.company-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 52px;
+  padding: 15px 20px;
+  color: var(--white);
+  background: var(--navy);
+  border: 1px solid var(--navy);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 1.6;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.company-action > span {
+  color: var(--mint);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.company-action:hover {
+  background: #132b38;
+  border-color: #3c746a;
+}
+
+.company-action--light {
+  border-color: rgba(173, 195, 214, 0.38);
+  background: transparent;
+}
+
+.company-action--light:hover {
+  border-color: var(--mint);
+  background: rgba(72, 229, 191, 0.055);
+}
+
+.company-greeting-page .company-story-hero {
+  padding-bottom: 48px;
+}
+
+.company-greeting-page .company-story-hero .breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.company-greeting-page .company-story-hero h1 {
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 550;
+  line-height: 1.25;
+}
+
+.company-greeting-page .company-story-hero .catalog-intro {
+  max-width: 640px;
+  margin-top: 22px;
+  color: #bdccd8;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.company-editorial-page .company-letter-section {
+  padding: 64px 0 72px;
+}
+
+.company-editorial-page .company-letter-grid {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 72px;
+}
+
+.company-letter-label {
+  display: block;
+  margin-bottom: 20px;
+  color: #3d6a63;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.company-editorial-page .company-message-copy p {
+  margin: 0 0 22px;
+  color: #46545f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: -0.015em;
+}
+
+.company-editorial-page .company-message-copy .company-letter-opening {
+  margin-bottom: 24px;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
+}
+
+.company-editorial-page .company-message-copy .company-signature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 16px;
+  margin: 32px 0 28px;
+  padding-top: 24px;
+  border-top: 1px solid #d8e0e5;
+  color: #5d6e7b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.company-editorial-page .company-signature strong {
+  margin: 0;
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.company-editorial-page .company-commitment {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: calc(var(--header-h) + 36px);
+  min-width: 0;
+  max-width: none;
+  min-height: 320px;
+  padding: 32px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #102535, var(--navy));
+  border: 1px solid #263d4d;
+  border-radius: 12px;
+}
+
+.company-commitment > :not(.company-commitment-emblem) {
+  position: relative;
+  z-index: 1;
+}
+
+.company-commitment .eyebrow {
+  display: block;
+  margin: 0;
+  color: var(--mint);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+
+.company-editorial-page .company-commitment h2 {
+  margin: 32px 0 36px;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 1.65;
+  letter-spacing: -0.025em;
+}
+
+.company-editorial-page .company-commitment > p {
+  margin: auto 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(159, 190, 227, 0.25);
+  color: #b9cbd8;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+}
+
+.company-commitment-emblem {
+  position: absolute;
+  right: -20px;
+  bottom: -44px;
+  width: 170px;
+  height: auto;
+  opacity: 0.035;
+}
+
+@media (max-width: 1180px) {
+  .company-story-hero-grid { grid-template-columns: minmax(0, 1fr) 140px; gap: 44px; }
+  .company-hero-emblem { min-height: 215px; padding-inline: 10px; }
+  .company-hero-emblem img { width: 74px; }
+  .company-hero-emblem > span { font-size: 6px; }
+  .company-purpose { padding: 28px; }
+  .company-principles-grid { gap: 44px; }
+  .company-editorial-page .company-principles-list li { gap: 18px; }
+  .company-editorial-page .company-letter-grid { gap: 48px; }
+  .company-editorial-page .company-commitment { padding: 28px; }
+}
+
+@media (max-width: 960px) {
+  .company-editorial-page .company-purpose-statement { font-size: 17px; }
+  .company-story-hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .company-hero-emblem { display: none; }
+  .company-principles-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .company-principles-intro { position: static; }
+  .company-principles-intro h2 { margin: 20px 0 24px; }
+  .company-editorial-page .company-letter-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .company-editorial-page .company-commitment { position: relative; top: auto; min-height: 260px; }
+  .company-editorial-page .company-commitment h2 { margin: 24px 0 32px; }
+}
+
+@media (max-width: 640px) {
+  .company-editorial-page .company-story-hero { padding: calc(var(--header-h) + 24px) 0 36px; }
+  .company-editorial-page .company-story-hero .breadcrumbs { margin-bottom: 34px; }
+  .company-editorial-page .company-story-hero .eyebrow { font-size: 9px; letter-spacing: 0.12em; }
+  .company-editorial-page .company-story-hero h1 { font-size: clamp(28px, 7.8vw, 38px); line-height: 1.4; }
+  .company-editorial-page .company-story-hero .catalog-intro { font-size: 14px; line-height: 1.85; }
+  .company-greeting-page .company-story-hero .breadcrumbs { margin-bottom: 30px; }
+  .company-greeting-page .company-story-hero h1 { font-size: 38px; line-height: 1.3; }
+  .company-greeting-page .company-story-hero .catalog-intro { margin-top: 18px; font-size: 17px; line-height: 1.8; }
+  .company-editorial-page .company-switcher .solution-switcher-inner { grid-template-columns: 0.85fr 1.45fr 1fr; }
+  .company-editorial-page .company-switcher a { min-height: 56px; padding: 17px 4px; font-size: 11px; }
+  .company-purpose-section { padding: 40px 0; }
+  .company-editorial-page .company-purpose-grid { gap: 20px; }
+  .company-purpose { padding: 24px; }
+  .company-purpose h2 { margin: 18px 0 16px; padding-bottom: 14px; font-size: 24px; gap: 10px; }
+  .company-purpose h2 > span { font-size: 12px; }
+  .company-editorial-page .company-purpose-statement { font-size: 16px; }
+  .company-principles-section { padding: 48px 0 56px; }
+  .company-principles-intro h2 { font-size: 29px; }
+  .company-editorial-page .company-principles-list li { grid-template-columns: 24px minmax(0, 1fr); gap: 10px 16px; padding: 24px 0; }
+  .company-editorial-page .company-principles-list h3 { font-size: 19px; }
+  .company-editorial-page .company-principles-list p { grid-column: 2; font-size: 14px; line-height: 1.85; }
+  .company-action { gap: 24px; padding-inline: 18px; font-size: 12px; }
+  .company-editorial-page .company-letter-section { padding: 44px 0 56px; }
+  .company-letter-label { margin-bottom: 20px; font-size: 9px; }
+  .company-editorial-page .company-message-copy p { margin-bottom: 20px; }
+  .company-editorial-page .company-message-copy .company-letter-opening { margin-bottom: 24px; font-size: 20px; line-height: 1.6; }
+  .company-editorial-page .company-message-copy .company-signature { margin-top: 32px; padding-top: 24px; font-size: 12px; }
+  .company-editorial-page .company-signature strong { font-size: 22px; }
+  .company-editorial-page .company-commitment { min-height: 250px; padding: 28px 24px; }
+  .company-editorial-page .company-commitment h2 { font-size: 22px; }
+}
+
+@media print {
+  .company-editorial-page .company-story-hero { padding-top: 32px; background: white; color: black; }
+  .company-story-hero h1 > span { color: black; }
+  .company-hero-emblem, .company-editorial-page .company-switcher, .company-action { display: none; }
+  .company-principles-intro, .company-editorial-page .company-commitment { position: static; }
+  .company-principles-section, .company-editorial-page .company-commitment { background: white; color: black; }
+  .company-editorial-page .company-principles-list li { border-color: #ccd8dd; break-inside: avoid; }
+  .company-editorial-page .company-principles-list p, .company-section-caption, .company-editorial-page .company-commitment > p { color: #364453; }
+}
