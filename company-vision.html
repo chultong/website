@@ -3,170 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="철통의 비전 페이지입니다. 상세 내용은 준비 중입니다." />
+    <meta name="description" content="철통의 미션, 비전, 고객의 문제에서 출발하는 다섯 가지 핵심가치를 소개합니다." />
     <meta name="theme-color" content="#06111f" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="비전 | CHULTONG" />
-    <meta property="og:description" content="철통의 비전 페이지입니다. 상세 내용은 준비 중입니다." />
+    <meta property="og:title" content="비전·핵심가치·미션 | CHULTONG" />
+    <meta property="og:description" content="철통의 미션, 비전, 고객의 문제에서 출발하는 다섯 가지 핵심가치를 소개합니다." />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="solutions.css" />
-    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="styles.css?v=20261006-typography" />
+    <link rel="stylesheet" href="solutions.css?v=20261006-typography" />
+    <link rel="stylesheet" href="pages.css?v=20261006-typography" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <title>비전 | CHULTONG</title>
+    <title>비전·핵심가치·미션 | CHULTONG</title>
     <noscript><style>
-      .menu-toggle, .copy-email { display: none !important; }
-      @media (max-width: 960px) {
+        .menu-toggle, .copy-email { display: none !important; }
+        @media (max-width: 960px) {
         .desktop-nav { display: flex; gap: 14px; margin: 0; }
         .nav-link { font-size: 13px; }
         .header-inner > .brand span { display: none; }
         .nav-link.nav-contact { min-height: 36px; padding: 0 8px; gap: 4px; }
         .nav-contact svg { width: 12px; }
-      }
-    </style></noscript>
+        }
+      </style>
+    </noscript>
   </head>
   <body id="top" class="solution-page category-page" data-page="about">
     <a class="skip-link" href="#main">본문 바로가기</a>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span>
+    </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="철통 홈">
-          <img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" />
-          <span>CHULTONG</span>
-        </a>
-
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
         <nav class="desktop-nav" aria-label="주요 메뉴">
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="company.html" data-nav-link="about" data-dropdown-trigger aria-expanded="false" aria-controls="company-menu">회사소개</a>
+              <a href="products.html" class="nav-link" data-nav-link="services" data-dropdown-trigger aria-expanded="false" aria-controls="services-menu">솔루션</a>
             </div>
-            <div class="nav-dropdown company-dropdown" id="company-menu" hidden>
-              <p class="dropdown-label">회사소개</p>
-              <a href="company-vision.html" aria-current="page"><span>비전</span><small>Vision</small></a>
-              <a href="company-greeting.html"><span>인사말</span><small>Message</small></a>
-              <a href="contact.html"><span>연락처</span><small>Contact</small></a>
+            <div class="nav-dropdown services-dropdown" id="services-menu" hidden>
+              <p class="dropdown-label">솔루션</p>
+              <a href="product-vision.html"><span>CCTV AI 영상분석</span><small>Video Analytics</small></a>
+              <a href="product-ops.html"><span>AI 시스템 유지관리</span><small>AIOps</small></a>
+              <a href="product-command-center.html"><span>통합 대시보드 &amp; 알림</span><small>Command Center</small></a>
+              <a href="products.html" class="dropdown-all">전체 솔루션 보기 <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="solutions.html" data-nav-link="solutions" data-dropdown-trigger aria-expanded="false" aria-controls="solutions-menu">솔루션</a>
+              <a href="solutions.html" class="nav-link" data-nav-link="industries" data-dropdown-trigger aria-expanded="false" aria-controls="industries-menu">산업별</a>
             </div>
-            <div class="nav-dropdown" id="solutions-menu" hidden>
-              <p class="dropdown-label">산업별 솔루션</p>
-              <a href="solution-manufacturing.html"><span>제조 · 물류</span><small>Manufacturing &amp; Logistics</small></a>
-              <a href="solution-healthcare.html"><span>병원 · 의료</span><small>Healthcare</small></a>
-              <a href="solution-retail.html"><span>유통 · 대형마트</span><small>Retail</small></a>
-              <a href="solution-energy.html"><span>발전 · 에너지</span><small>Energy</small></a>
+            <div class="nav-dropdown industries-dropdown" id="industries-menu" hidden>
+              <p class="dropdown-label">산업별 적용 분야</p>
+              <a href="solution-manufacturing.html"><span>제조</span><small>Manufacturing</small></a>
+              <a href="solution-logistics.html"><span>물류</span><small>Logistics</small></a>
+              <a href="solution-airport.html"><span>공항</span><small>Airport</small></a>
+              <a href="solution-casino.html"><span>카지노</span><small>Casino</small></a>
               <a href="solution-smart-city.html"><span>스마트시티</span><small>Smart City</small></a>
-              <a href="solution-public.html"><span>공공기관</span><small>Public Sector</small></a>
-              <a class="dropdown-all" href="solutions.html">전체 솔루션 보기 <span aria-hidden="true">↗</span></a>
+              <a href="solution-school.html"><span>학교</span><small>School</small></a>
+              <a href="solution-healthcare.html"><span>병원</span><small>Healthcare</small></a>
+              <a href="solution-hotel.html"><span>호텔</span><small>Hotel</small></a>
+              <a href="solution-retail.html"><span>매장·리테일</span><small>Retail</small></a>
+              <a href="solution-stadium.html"><span>경기장·대형시설</span><small>Stadium &amp; Large Facilities</small></a>
+              <a href="solutions.html" class="dropdown-all">전체 산업별 보기 <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="products.html" data-nav-link="products" data-dropdown-trigger aria-expanded="false" aria-controls="products-menu">제품</a>
+              <a href="company.html" class="nav-link" data-nav-link="about" data-dropdown-trigger aria-expanded="false" aria-controls="about-menu">회사</a>
             </div>
-            <div class="nav-dropdown product-dropdown" id="products-menu" hidden>
-              <p class="dropdown-label">제품 라인업</p>
-              <a href="product-vision.html"><span>AI 영상분석</span><small>Computer Vision</small></a>
-              <a href="product-ops.html"><span>AI 시스템 유지보수</span><small>AI Ops</small></a>
+            <div class="nav-dropdown about-dropdown" id="about-menu" hidden>
+              <p class="dropdown-label">회사</p>
+              <a href="company-greeting.html"><span>인사말</span><small>Message</small></a>
+              <a href="company-vision.html" aria-current="page"><span>비전·핵심가치·미션</span><small>Vision &amp; Values</small></a>
+              <a href="company-directions.html"><span>찾아오시는 길</span><small>Directions</small></a>
             </div>
           </div>
-          <a class="nav-link nav-contact" href="contact.html" data-nav-link="contact">
-            고객문의
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 5 5-5 5" /></svg>
-          </a>
+          <a href="contact.html" class="nav-link nav-contact" data-nav-link="contact">문의 <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 5 5-5 5" /></svg></a>
         </nav>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
-          <span></span><span></span>
-        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기"><span></span><span></span></button>
       </div>
-
       <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="사이트 메뉴" hidden>
-        <div class="mobile-menu-bar"><span>EXPLORE CHULTONG</span><button class="mobile-menu-close" type="button">메뉴 닫기 <span aria-hidden="true">×</span></button></div>
+        <div class="mobile-menu-bar"><span>EXPLORE CHULTONG</span><button class="mobile-menu-close" type="button">메뉴 닫기 <span aria-hidden="true">×</span></button>
+        </div>
         <nav aria-label="모바일 메뉴">
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="company.html"><span>01</span> 회사소개</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-company" aria-label="회사소개 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="products.html" class="mobile-nav-link"><span>01</span> 솔루션</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-services-menu" aria-label="솔루션 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-company" hidden>
-              <a href="company-vision.html" aria-current="page">비전</a>
-              <a href="company-greeting.html">인사말</a>
-              <a href="contact.html">연락처</a>
+            <div class="mobile-submenu" id="mobile-services-menu" hidden>
+              <a href="product-vision.html">CCTV AI 영상분석</a>
+              <a href="product-ops.html">AI 시스템 유지관리</a>
+              <a href="product-command-center.html">통합 대시보드 &amp; 알림</a>
             </div>
           </div>
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="solutions.html"><span>02</span> 솔루션</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-solutions" aria-label="산업별 솔루션 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="solutions.html" class="mobile-nav-link"><span>02</span> 산업별</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-industries-menu" aria-label="산업별 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-solutions" hidden>
-              <a href="solution-manufacturing.html">제조 · 물류</a>
-              <a href="solution-healthcare.html">병원 · 의료</a>
-              <a href="solution-retail.html">유통 · 대형마트</a>
-              <a href="solution-energy.html">발전 · 에너지</a>
+            <div class="mobile-submenu" id="mobile-industries-menu" hidden>
+              <a href="solution-manufacturing.html">제조</a>
+              <a href="solution-logistics.html">물류</a>
+              <a href="solution-airport.html">공항</a>
+              <a href="solution-casino.html">카지노</a>
               <a href="solution-smart-city.html">스마트시티</a>
-              <a href="solution-public.html">공공기관</a>
+              <a href="solution-school.html">학교</a>
+              <a href="solution-healthcare.html">병원</a>
+              <a href="solution-hotel.html">호텔</a>
+              <a href="solution-retail.html">매장·리테일</a>
+              <a href="solution-stadium.html">경기장·대형시설</a>
             </div>
           </div>
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="products.html"><span>03</span> 제품</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-products" aria-label="제품 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="company.html" class="mobile-nav-link"><span>03</span> 회사</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about-menu" aria-label="회사 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-products" hidden>
-              <a href="product-vision.html">AI 영상분석</a>
-              <a href="product-ops.html">AI 시스템 유지보수</a>
+            <div class="mobile-submenu" id="mobile-about-menu" hidden>
+              <a href="company-greeting.html">인사말</a>
+              <a href="company-vision.html" aria-current="page">비전·핵심가치·미션</a>
+              <a href="company-directions.html">찾아오시는 길</a>
             </div>
           </div>
-          <a class="mobile-nav-link" href="contact.html"><span>04</span> 고객문의</a>
+          <a href="contact.html" class="mobile-nav-link"><span>04</span> 문의</a>
         </nav>
-        <a class="mobile-contact" href="mailto:abraham@chultong.com">abraham@chultong.com <span aria-hidden="true">↗</span></a>
+        <a class="mobile-contact" href="tel:03180319909">031-8031-9909 <span aria-hidden="true">↗</span></a>
       </div>
     </header>
     <main id="main">
       <section class="catalog-hero" aria-labelledby="page-title">
         <div class="container">
-          <nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a><span aria-hidden="true">/</span><a href="company.html">회사소개</a><span aria-hidden="true">/</span><span aria-current="page">비전</span></nav>
-          <p class="eyebrow light">OUR VISION</p>
-          <h1 id="page-title">비전</h1>
+          <nav class="breadcrumbs" aria-label="현재 위치">
+            <a href="index.html">홈</a><span aria-hidden="true">/</span>
+            <a href="company.html">회사</a><span aria-hidden="true">/</span><span aria-current="page">비전·핵심가치·미션</span>
+          </nav>
+          <p class="eyebrow light">VISION / VALUES / MISSION</p>
+          <h1 id="page-title">비전·핵심가치·미션</h1>
+          <p class="catalog-intro">현장의 안전과 시스템 운영에 AI의 가치를 더합니다.<br />철통이 하는 일, 지향하는 미래, 그리고 일하는 기준입니다.</p>
         </div>
       </section>
-      <nav class="solution-switcher company-switcher" aria-label="회사소개 세부 페이지"><div class="container solution-switcher-inner"><a href="company-vision.html" aria-current="page">비전</a><a href="company-greeting.html">인사말</a><a href="contact.html">연락처</a></div></nav>
-      <!-- 공식 비전이 준비되면 아래 섹션을 교체합니다. -->
-      <section class="solution-placeholder section" aria-labelledby="vision-title">
+      <nav class="solution-switcher company-switcher" aria-label="회사 세부 페이지">
+        <div class="container solution-switcher-inner">
+          <a href="company-greeting.html">인사말</a>
+          <a href="company-vision.html" aria-current="page">비전·핵심가치·미션</a>
+          <a href="company-directions.html">찾아오시는 길</a>
+        </div>
+      </nav>
+      <section class="catalog-section">
         <div class="container">
-          <span class="preparing-label">COMING SOON</span>
-          <h2 id="vision-title">비전 내용을 준비하고 있습니다.</h2>
+          <div class="mission-vision-grid">
+            <article class="catalog-card"><span class="catalog-number">MISSION / 우리가 하는 일</span>
+              <h2>미션</h2>
+              <p>기존 영상과 시스템 인프라에 AI를 연결해,<br />고객의 안전 관리와 운영 업무를 개선한다.</p>
+            </article>
+            <article class="catalog-card"><span class="catalog-number">VISION / 우리가 지향하는 미래</span>
+              <h2>비전</h2>
+              <p>기업과 공공기관이 AI를 현장에서 활용할 때<br />믿고 함께할 수 있는 설계·구축·운영 파트너가 된다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="detail-approach section">
+        <div class="container">
+          <div class="section-heading light-heading">
+            <div>
+              <div class="section-label light reveal"><span>01</span> CORE VALUES</div>
+              <h2 class="display-heading reveal">핵심가치 — 우리가 일하는 기준</h2>
+            </div>
+          </div>
+          <ol class="company-values">
+            <li class="reveal"><span>01</span>
+              <h3>고객의 문제에서 출발</h3>
+              <p>기능보다 먼저 고객이 해결하려는 과제를 이해합니다.</p>
+            </li>
+            <li class="reveal"><span>02</span>
+              <h3>기존 자산의 가치 활용</h3>
+              <p>현재 인프라를 검토하고 필요한 개선 범위를 제안합니다.</p>
+            </li>
+            <li class="reveal"><span>03</span>
+              <h3>현장에서 검증</h3>
+              <p>실제 조건에서 적용 가능성과 운영 적합성을 확인합니다.</p>
+            </li>
+            <li class="reveal"><span>04</span>
+              <h3>운영까지 연결</h3>
+              <p>기술이 담당자의 업무와 대응 절차에 이어지도록 설계합니다.</p>
+            </li>
+            <li class="reveal"><span>05</span>
+              <h3>신뢰와 책임</h3>
+              <p>제공 범위와 한계를 명확히 설명하고 약속한 역할을 수행합니다.</p>
+            </li>
+          </ol>
+          <a class="button button-primary" href="products.html">철통의 솔루션 살펴보기 <span aria-hidden="true">↗</span></a>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-main">
-        <a class="brand" href="index.html" aria-label="철통 홈">
-          <img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" />
-          <span>CHULTONG</span>
-        </a>
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
         <p>See clearly. Think ahead. Operate better.</p>
         <nav aria-label="푸터 메뉴">
-          <a href="company.html">회사소개</a>
-          <a href="solutions.html">솔루션</a>
-          <a href="products.html">제품</a>
-          <a href="contact.html">고객문의</a>
+          <a href="products.html">솔루션</a>
+          <a href="solutions.html">산업별</a>
+          <a href="company.html">회사</a>
+          <a href="contact.html">문의</a>
         </nav>
       </div>
-      <div class="container footer-bottom">
-        <span>© <span id="year"></span> CHULTONG. ALL RIGHTS RESERVED.</span>
-        <span>VISION AI · AIOPS · SECURITY</span>
+      <div class="container footer-details"><span>주식회사 철통 · 대표이사 함세진</span><span>경기도 안양시 동안구 안양판교로 20, 305호</span>
+        <a href="tel:03180319909">031-8031-9909</a>
+        <a href="mailto:abraham@chultong.com">abraham@chultong.com</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="year"></span> CHULTONG. ALL RIGHTS RESERVED.</span><span>VIDEO ANALYTICS · AIOPS · COMMAND CENTER</span>
       </div>
     </footer>
     <script src="script.js"></script>

@@ -3,135 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="교통 흐름과 보행자 안전, 사고·도로 위험 대응을 위한 Vaidio 스마트시티 영상분석 솔루션을 소개합니다." />
+    <meta name="description" content="철통은 지자체와 관제센터의 기존 영상 환경에 맞춰 AI 영상분석과 시스템 유지관리 개선을 검토합니다." />
     <meta name="theme-color" content="#06111f" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="스마트시티 솔루션 | CHULTONG" />
-    <meta property="og:description" content="교통 흐름과 보행자 안전, 사고·도로 위험 대응을 위한 Vaidio 스마트시티 영상분석 솔루션을 소개합니다." />
-    <meta property="og:image" content="https://chultong.com/assets/smart-city.jpg" />
+    <meta property="og:title" content="스마트시티 산업별 AI 솔루션 | CHULTONG" />
+    <meta property="og:description" content="철통은 지자체와 관제센터의 기존 영상 환경에 맞춰 AI 영상분석과 시스템 유지관리 개선을 검토합니다." />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="solutions.css" />
-    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="styles.css?v=20261006-typography" />
+    <link rel="stylesheet" href="solutions.css?v=20261006-typography" />
+    <link rel="stylesheet" href="pages.css?v=20261006-typography" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <title>스마트시티 솔루션 | CHULTONG</title>
+    <title>스마트시티 산업별 AI 솔루션 | CHULTONG</title>
     <noscript><style>
-      .menu-toggle { display: none !important; }
-      @media (max-width: 960px) {
+        .menu-toggle, .copy-email { display: none !important; }
+        @media (max-width: 960px) {
         .desktop-nav { display: flex; gap: 14px; margin: 0; }
         .nav-link { font-size: 13px; }
         .header-inner > .brand span { display: none; }
         .nav-link.nav-contact { min-height: 36px; padding: 0 8px; gap: 4px; }
         .nav-contact svg { width: 12px; }
-      }
-    </style></noscript>
+        }
+      </style>
+    </noscript>
   </head>
-  <body id="top" class="solution-page" data-page="solutions">
+  <body id="top" class="solution-page industry-detail-page" data-page="industries">
     <a class="skip-link" href="#main">본문 바로가기</a>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span>
+    </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="철통 홈">
-          <img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" />
-          <span>CHULTONG</span>
-        </a>
-
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
         <nav class="desktop-nav" aria-label="주요 메뉴">
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="company.html" data-nav-link="about" data-dropdown-trigger aria-expanded="false" aria-controls="company-menu">회사소개</a>
+              <a href="products.html" class="nav-link" data-nav-link="services" data-dropdown-trigger aria-expanded="false" aria-controls="services-menu">솔루션</a>
             </div>
-            <div class="nav-dropdown company-dropdown" id="company-menu" hidden>
-              <p class="dropdown-label">회사소개</p>
-              <a href="company-vision.html"><span>비전</span><small>Vision</small></a>
-              <a href="company-greeting.html"><span>인사말</span><small>Message</small></a>
-              <a href="contact.html"><span>연락처</span><small>Contact</small></a>
+            <div class="nav-dropdown services-dropdown" id="services-menu" hidden>
+              <p class="dropdown-label">솔루션</p>
+              <a href="product-vision.html"><span>CCTV AI 영상분석</span><small>Video Analytics</small></a>
+              <a href="product-ops.html"><span>AI 시스템 유지관리</span><small>AIOps</small></a>
+              <a href="product-command-center.html"><span>통합 대시보드 &amp; 알림</span><small>Command Center</small></a>
+              <a href="products.html" class="dropdown-all">전체 솔루션 보기 <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="solutions.html" data-nav-link="solutions" data-dropdown-trigger aria-expanded="false" aria-controls="solutions-menu">솔루션</a>
+              <a href="solutions.html" class="nav-link" data-nav-link="industries" data-dropdown-trigger aria-expanded="false" aria-controls="industries-menu">산업별</a>
             </div>
-            <div class="nav-dropdown" id="solutions-menu" hidden>
-              <p class="dropdown-label">산업별 솔루션</p>
-              <a href="solution-manufacturing.html"><span>제조 · 물류</span><small>Manufacturing &amp; Logistics</small></a>
-              <a href="solution-healthcare.html"><span>병원 · 의료</span><small>Healthcare</small></a>
-              <a href="solution-retail.html"><span>유통 · 대형마트</span><small>Retail</small></a>
-              <a href="solution-energy.html"><span>발전 · 에너지</span><small>Energy</small></a>
+            <div class="nav-dropdown industries-dropdown" id="industries-menu" hidden>
+              <p class="dropdown-label">산업별 적용 분야</p>
+              <a href="solution-manufacturing.html"><span>제조</span><small>Manufacturing</small></a>
+              <a href="solution-logistics.html"><span>물류</span><small>Logistics</small></a>
+              <a href="solution-airport.html"><span>공항</span><small>Airport</small></a>
+              <a href="solution-casino.html"><span>카지노</span><small>Casino</small></a>
               <a href="solution-smart-city.html" aria-current="page"><span>스마트시티</span><small>Smart City</small></a>
-              <a href="solution-public.html"><span>공공기관</span><small>Public Sector</small></a>
-              <a class="dropdown-all" href="solutions.html">전체 솔루션 보기 <span aria-hidden="true">↗</span></a>
+              <a href="solution-school.html"><span>학교</span><small>School</small></a>
+              <a href="solution-healthcare.html"><span>병원</span><small>Healthcare</small></a>
+              <a href="solution-hotel.html"><span>호텔</span><small>Hotel</small></a>
+              <a href="solution-retail.html"><span>매장·리테일</span><small>Retail</small></a>
+              <a href="solution-stadium.html"><span>경기장·대형시설</span><small>Stadium &amp; Large Facilities</small></a>
+              <a href="solutions.html" class="dropdown-all">전체 산업별 보기 <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="nav-group">
             <div class="nav-group-heading">
-              <a class="nav-link" href="products.html" data-nav-link="products" data-dropdown-trigger aria-expanded="false" aria-controls="products-menu">제품</a>
+              <a href="company.html" class="nav-link" data-nav-link="about" data-dropdown-trigger aria-expanded="false" aria-controls="about-menu">회사</a>
             </div>
-            <div class="nav-dropdown product-dropdown" id="products-menu" hidden>
-              <p class="dropdown-label">제품 라인업</p>
-              <a href="product-vision.html"><span>AI 영상분석</span><small>Computer Vision</small></a>
-              <a href="product-ops.html"><span>AI 시스템 유지보수</span><small>AI Ops</small></a>
+            <div class="nav-dropdown about-dropdown" id="about-menu" hidden>
+              <p class="dropdown-label">회사</p>
+              <a href="company-greeting.html"><span>인사말</span><small>Message</small></a>
+              <a href="company-vision.html"><span>비전·핵심가치·미션</span><small>Vision &amp; Values</small></a>
+              <a href="company-directions.html"><span>찾아오시는 길</span><small>Directions</small></a>
             </div>
           </div>
-          <a class="nav-link nav-contact" href="contact.html" data-nav-link="contact">
-            고객문의
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 5 5-5 5" /></svg>
-          </a>
+          <a href="contact.html" class="nav-link nav-contact" data-nav-link="contact">문의 <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 5 5-5 5" /></svg></a>
         </nav>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
-          <span></span><span></span>
-        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기"><span></span><span></span></button>
       </div>
-
       <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="사이트 메뉴" hidden>
-        <div class="mobile-menu-bar"><span>EXPLORE CHULTONG</span><button class="mobile-menu-close" type="button">메뉴 닫기 <span aria-hidden="true">×</span></button></div>
+        <div class="mobile-menu-bar"><span>EXPLORE CHULTONG</span><button class="mobile-menu-close" type="button">메뉴 닫기 <span aria-hidden="true">×</span></button>
+        </div>
         <nav aria-label="모바일 메뉴">
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="company.html"><span>01</span> 회사소개</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-company" aria-label="회사소개 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="products.html" class="mobile-nav-link"><span>01</span> 솔루션</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-services-menu" aria-label="솔루션 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-company" hidden>
-              <a href="company-vision.html">비전</a>
-              <a href="company-greeting.html">인사말</a>
-              <a href="contact.html">연락처</a>
+            <div class="mobile-submenu" id="mobile-services-menu" hidden>
+              <a href="product-vision.html">CCTV AI 영상분석</a>
+              <a href="product-ops.html">AI 시스템 유지관리</a>
+              <a href="product-command-center.html">통합 대시보드 &amp; 알림</a>
             </div>
           </div>
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="solutions.html"><span>02</span> 솔루션</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-solutions" aria-label="산업별 솔루션 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="solutions.html" class="mobile-nav-link"><span>02</span> 산업별</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-industries-menu" aria-label="산업별 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-solutions" hidden>
-              <a href="solution-manufacturing.html">제조 · 물류</a>
-              <a href="solution-healthcare.html">병원 · 의료</a>
-              <a href="solution-retail.html">유통 · 대형마트</a>
-              <a href="solution-energy.html">발전 · 에너지</a>
+            <div class="mobile-submenu" id="mobile-industries-menu" hidden>
+              <a href="solution-manufacturing.html">제조</a>
+              <a href="solution-logistics.html">물류</a>
+              <a href="solution-airport.html">공항</a>
+              <a href="solution-casino.html">카지노</a>
               <a href="solution-smart-city.html" aria-current="page">스마트시티</a>
-              <a href="solution-public.html">공공기관</a>
+              <a href="solution-school.html">학교</a>
+              <a href="solution-healthcare.html">병원</a>
+              <a href="solution-hotel.html">호텔</a>
+              <a href="solution-retail.html">매장·리테일</a>
+              <a href="solution-stadium.html">경기장·대형시설</a>
             </div>
           </div>
           <div class="mobile-nav-group">
             <div class="mobile-nav-heading">
-              <a class="mobile-nav-link" href="products.html"><span>03</span> 제품</a>
-              <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-products" aria-label="제품 메뉴 열기">
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-              </button>
+              <a href="company.html" class="mobile-nav-link"><span>03</span> 회사</a><button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about-menu" aria-label="회사 하위 메뉴 열기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg></button>
             </div>
-            <div class="mobile-submenu" id="mobile-products" hidden>
-              <a href="product-vision.html">AI 영상분석</a>
-              <a href="product-ops.html">AI 시스템 유지보수</a>
+            <div class="mobile-submenu" id="mobile-about-menu" hidden>
+              <a href="company-greeting.html">인사말</a>
+              <a href="company-vision.html">비전·핵심가치·미션</a>
+              <a href="company-directions.html">찾아오시는 길</a>
             </div>
           </div>
-          <a class="mobile-nav-link" href="contact.html"><span>04</span> 고객문의</a>
+          <a href="contact.html" class="mobile-nav-link"><span>04</span> 문의</a>
         </nav>
-        <a class="mobile-contact" href="mailto:abraham@chultong.com">abraham@chultong.com <span aria-hidden="true">↗</span></a>
+        <a class="mobile-contact" href="tel:03180319909">031-8031-9909 <span aria-hidden="true">↗</span></a>
       </div>
     </header>
     <main id="main">
@@ -139,174 +132,130 @@
         <div class="container">
           <nav class="breadcrumbs" aria-label="현재 위치">
             <a href="index.html">홈</a><span aria-hidden="true">/</span>
-            <a href="solutions.html">솔루션</a><span aria-hidden="true">/</span>
-            <span aria-current="page">스마트시티</span>
+            <a href="solutions.html">산업별</a><span aria-hidden="true">/</span><span aria-current="page">스마트시티</span>
           </nav>
           <div class="detail-hero-grid">
             <div class="detail-hero-copy">
-              <p class="eyebrow light">Smart Cities</p>
+              <p class="eyebrow light">Smart City</p>
               <h1 id="solution-title">도시의 움직임을,<br /><span>더 안전한 흐름으로.</span></h1>
-              <p class="detail-hero-description">교차로와 도로, 보행 공간과 도시 관제센터까지.<br />분산된 영상에서 교통의 변화를 읽고, 더 안전하고 효율적인 도시 운영을 돕습니다.</p>
-              <div class="detail-tags"><span>Vision AI</span><span>Traffic Analytics</span><span>City Operations</span></div>
+              <p class="detail-hero-description"><strong>도시의 CCTV, 필요한 상황을 먼저 확인하는 관제로.</strong>철통은 지자체와 관제센터의 기존 영상 환경에 맞춰 AI 영상분석과 시스템 유지관리 개선을 검토합니다.</p>
+              <div class="detail-tags"><span>Video Analytics</span><span>AIOps</span><span>Command Center</span>
+              </div>
             </div>
             <figure class="detail-hero-photo">
-              <div class="industry-photo"><img src="assets/smart-city.jpg" alt="차량과 보행자가 이동하는 도심 거리" width="1920" height="896" fetchpriority="high" /></div>
-              <figcaption><span class="signal-dot" aria-hidden="true"></span>도시의 움직임을 읽고, 관제를 연결합니다.<small>CHULTONG / INDUSTRY SOLUTIONS</small></figcaption>
+              <div class="industry-photo"><img src="assets/smart-city.jpg" alt="도시의 도로와 영상 관제 인프라" fetchpriority="high" />
+              </div>
+              <figcaption><span class="signal-dot" aria-hidden="true"></span>현장을 읽고, 운영을 연결합니다.<small>CHULTONG / INDUSTRY SOLUTIONS</small>
+              </figcaption>
             </figure>
           </div>
         </div>
       </section>
-      <nav class="solution-switcher" aria-label="산업별 솔루션 페이지">
+      <nav class="solution-switcher industry-switcher" aria-label="산업별 페이지">
         <div class="container solution-switcher-inner">
-          <a href="solution-manufacturing.html">제조 · 물류</a>
-          <a href="solution-healthcare.html">병원 · 의료</a>
-          <a href="solution-retail.html">유통 · 대형마트</a>
-          <a href="solution-energy.html">발전 · 에너지</a>
+          <a href="solution-manufacturing.html">제조</a>
+          <a href="solution-logistics.html">물류</a>
+          <a href="solution-airport.html">공항</a>
+          <a href="solution-casino.html">카지노</a>
           <a href="solution-smart-city.html" aria-current="page">스마트시티</a>
-          <a href="solution-public.html">공공기관</a>
+          <a href="solution-school.html">학교</a>
+          <a href="solution-healthcare.html">병원</a>
+          <a href="solution-hotel.html">호텔</a>
+          <a href="solution-retail.html">매장·리테일</a>
+          <a href="solution-stadium.html">경기장·대형시설</a>
         </div>
       </nav>
-      <section class="detail-applications section" id="applications" aria-labelledby="applications-title">
+      <section class="detail-applications section" id="applications">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading ">
             <div>
-              <div class="section-label reveal"><span>01</span> 활용 분야 / APPLICATIONS</div>
-              <h2 class="display-heading reveal" id="applications-title">교통의 흐름부터,<br />시민의 안전까지.</h2>
+              <div class="section-label  reveal"><span>01</span> 현장 과제 / APPLICATIONS</div>
+              <h2 class="display-heading reveal">도시의 우선 과제부터 정의합니다.</h2>
             </div>
-            <p class="section-intro reveal">교통 데이터를 모으고, 위험 장면을 확인하고.<br />도시 관제에 필요한 정보를 영상에서 연결합니다.</p>
           </div>
           <div class="application-grid">
             <article class="application-card reveal">
-              <div class="industry-photo"><img src="assets/city-traffic.jpg" alt="차량이 이동하는 도로와 다층 교차로의 항공 전경" width="1200" height="899" loading="lazy" /></div>
-              <div class="application-copy"><span>01 / TRAFFIC FLOW</span><h3>교통 흐름과 혼잡</h3><p>차량·보행자 집계와 히트맵으로 혼잡 지점을 파악하고, 교차로와 신호 운영 개선을 검토합니다.</p><ul><li>차량·회전 이동량 집계</li><li>혼잡 지점 분석</li></ul></div>
+              <div class="industry-photo"><img src="assets/city-road.jpg" alt="도시의 도로와 영상 관제 인프라" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>01 / SMART CITY</span>
+                <h3>구역별 위험 상황</h3>
+                <p>특정 구역의 위험 상황 확인</p>
+              </div>
             </article>
             <article class="application-card reveal">
-              <div class="industry-photo"><img src="assets/city-pedestrians.jpg" alt="횡단보도를 건너는 보행자들의 이동 장면" width="1200" height="801" loading="lazy" /></div>
-              <div class="application-copy"><span>02 / PEDESTRIAN SAFETY</span><h3>보행 공간의 안전</h3><p>횡단보도 이용과 보행·차량의 움직임을 살펴보고, 위험 장면 확인과 안전 동선 개선에 활용합니다.</p><ul><li>횡단보도 이용 분석</li><li>위험 장면 확인</li></ul></div>
+              <div class="industry-photo"><img src="assets/city-traffic.jpg" alt="도시의 도로와 영상 관제 인프라" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>02 / SMART CITY</span>
+                <h3>사람과 차량의 흐름</h3>
+                <p>사람과 차량의 흐름 분석</p>
+              </div>
             </article>
             <article class="application-card reveal">
-              <div class="industry-photo"><img src="assets/city-road.jpg" alt="야간 도심 도로와 교차로를 통과하는 차량" width="1200" height="800" loading="lazy" /></div>
-              <div class="application-copy"><span>03 / INCIDENT RESPONSE</span><h3>사고와 도로 위험</h3><p>사고, 정차 차량과 도로 장애물 등 운영을 방해하는 상황을 감지해 관제 담당자에게 알림을 전달합니다.</p><ul><li>사고·정차 차량 확인</li><li>관제 알림 연동</li></ul></div>
+              <div class="industry-photo"><img src="assets/city-pedestrians.jpg" alt="도시의 도로와 영상 관제 인프라" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>03 / SMART CITY</span>
+                <h3>사건 관련 영상 검색</h3>
+                <p>사건 관련 영상 검색</p>
+              </div>
             </article>
             <article class="application-card reveal">
-              <div class="industry-photo"><img src="assets/smart-city.jpg" alt="차량과 보행 동선을 함께 확인할 수 있는 도시 거리" width="1920" height="896" loading="lazy" /></div>
-              <div class="application-copy"><span>04 / FORENSIC INSIGHTS</span><h3>사건 이후의 분석</h3><p>번호판 인식과 차량 이동 장면을 활용해 사건의 흐름을 확인하고, 장기적인 교통 개선에 참고합니다.</p><ul><li>차량 이동 추적</li><li>사건 전후 확인</li></ul></div>
+              <div class="industry-photo"><img src="assets/smart-city.jpg" alt="도시의 도로와 영상 관제 인프라" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>04 / SMART CITY</span>
+                <h3>관제 인프라 상태</h3>
+                <p>관제 서버·네트워크·저장장치의 상태 확인</p>
+              </div>
             </article>
           </div>
-          <p class="detail-scope-note">위 내용은 활용 시나리오입니다. 신호 제어는 기존 시스템과 운영기관의 연동·승인 범위를 별도로 검토하며, 위반 단속이나 법적 판단을 자동으로 확정하지 않습니다. 감지 기능과 개인정보 처리 범위는 현장에 맞춰 확인합니다.</p>
         </div>
       </section>
-      <section class="detail-challenges section" id="challenges" aria-labelledby="challenges-title">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <div class="section-label reveal"><span>02</span> 주요 과제와 VAIDIO 솔루션</div>
-              <h2 class="display-heading reveal" id="challenges-title">현장의 고민에서,<br />해결 방법으로.</h2>
-            </div>
-            <p class="section-intro reveal">혼잡과 대응 지연, 반복적인 수작업 집계.<br />교통 관제의 주요 과제를 데이터와 연결합니다.</p>
-          </div>
-          <div class="challenge-list">
-            <article class="challenge-row reveal" aria-labelledby="challenge-congestion-title">
-              <header class="challenge-topic"><span>01 / TRAFFIC FLOW</span><h3 id="challenge-congestion-title">혼잡과 교차로 병목</h3><p>실시간 흐름 데이터 확보</p></header>
-              <div class="challenge-problem"><span class="challenge-label">고객의 과제</span><p>교차로의 차량 이동량과 혼잡 변화를 제때 파악하지 못하면 신호 운영 개선이 어렵습니다.</p></div>
-              <div class="challenge-solution"><span class="challenge-label">Vaidio 솔루션</span><p>차량·보행자 집계와 히트맵으로 혼잡을 분석하고, 기존 신호 시스템과의 연동 가능 범위를 검토합니다.</p><span class="challenge-outcome"><span aria-hidden="true">✓</span> 교통 운영 개선의 데이터 확보</span></div>
-            </article>
-            <article class="challenge-row reveal" aria-labelledby="challenge-incidents-title">
-              <header class="challenge-topic"><span>02 / INCIDENT RESPONSE</span><h3 id="challenge-incidents-title">사고·장애물 발견 지연</h3><p>관제와 현장 대응의 연결</p></header>
-              <div class="challenge-problem"><span class="challenge-label">고객의 과제</span><p>사고나 정차 차량, 장애물을 늦게 발견하면 교통 정체와 추가 위험으로 이어질 수 있습니다.</p></div>
-              <div class="challenge-solution"><span class="challenge-label">Vaidio 솔루션</span><p>도로의 위험 이벤트를 감지해 관제 담당자에게 전달하고, 관련 영상으로 상황과 대응 우선순위를 확인하도록 돕습니다.</p><span class="challenge-outcome"><span aria-hidden="true">✓</span> 도로 위험의 빠른 상황 확인</span></div>
-            </article>
-            <article class="challenge-row reveal" aria-labelledby="challenge-counting-title">
-              <header class="challenge-topic"><span>03 / TRAFFIC DATA</span><h3 id="challenge-counting-title">반복적인 수작업 집계</h3><p>차량·보행자 흐름 기록</p></header>
-              <div class="challenge-problem"><span class="challenge-label">고객의 과제</span><p>교통량과 보행 이동을 사람이 직접 집계하면 시간대별·구역별 변화를 비교하기 어렵습니다.</p></div>
-              <div class="challenge-solution"><span class="challenge-label">Vaidio 솔루션</span><p>차량과 보행자의 이동을 자동 집계하고, 교차로 통계와 과거 패턴을 운영 계획에 활용합니다.</p><span class="challenge-outcome"><span aria-hidden="true">✓</span> 교통 데이터의 지속적인 축적</span></div>
-            </article>
-          </div>
-          <div class="challenge-next reveal"><p>이 과제를 해결할 플랫폼, 왜 Vaidio일까요?</p><a class="detail-inline-link" href="#why-vaidio">선택하는 이유 살펴보기 <span aria-hidden="true">↓</span></a></div>
-        </div>
-      </section>
-      <section class="detail-why-vaidio section" id="why-vaidio" aria-labelledby="why-vaidio-title">
+      <section class="detail-approach section" id="approach">
         <div class="container">
           <div class="section-heading light-heading">
             <div>
-              <div class="section-label light reveal"><span>03</span> VAIDIO 제품 소개 / WHY VAIDIO</div>
-              <h2 class="display-heading reveal" id="why-vaidio-title">Vaidio를<br />선택하는 이유.</h2>
+              <div class="section-label light reveal"><span>02</span> 적용과 검증 / APPROACH</div>
+              <h2 class="display-heading reveal">관제 업무와 연결되는 구성이 중요합니다.</h2>
             </div>
-            <p class="section-intro reveal">영상 분석에서 도시 운영의 판단 근거로.<br />교통 환경에 맞춰 살펴볼 네 가지 제품 강점입니다.</p>
           </div>
-          <div class="vaidio-reason-grid">
-            <article class="vaidio-reason-card reveal">
-              <div class="reason-key"><strong>SIGNAL</strong><span>교통 신호 분석</span></div>
-              <h3>신호와 교통 흐름을<br />함께 살펴보다</h3>
-              <p>카메라 영상의 신호 상태와 이동량을 분석합니다. 실제 신호 제어는 연동·운영 범위를 따로 검토합니다.</p>
-              <ul class="reason-tags"><li>신호 상태 분석</li><li>교차로 통계</li></ul>
-              <span class="reason-benefit">교차로 운영의 판단 근거</span>
-            </article>
-            <article class="vaidio-reason-card reveal">
-              <div class="reason-key"><strong>VMS</strong><span>기존 관제와 연결</span></div>
-              <h3>분산된 카메라를<br />관제의 데이터로</h3>
-              <p>기존 카메라·VMS와 연결해 교통 이벤트와 영상 정보를 관제 업무에 활용합니다.</p>
-              <ul class="reason-tags"><li>카메라·VMS</li><li>이벤트 연동</li></ul>
-              <span class="reason-benefit">현재 관제 인프라 활용</span>
-            </article>
-            <article class="vaidio-reason-card reveal">
-              <div class="reason-key"><strong>DATA</strong><span>계획을 위한 데이터</span></div>
-              <h3>지금의 변화에서<br />장기적인 개선으로</h3>
-              <p>집계, 체류 시간과 히트맵을 비교해 도로 구조와 자원 배치 개선에 참고합니다.</p>
-              <ul class="reason-tags"><li>집계·히트맵</li><li>과거 패턴</li></ul>
-              <span class="reason-benefit">데이터 기반 운영 계획</span>
-            </article>
-            <article class="vaidio-reason-card reveal">
-              <div class="reason-key"><strong>EDGE</strong><span>유연한 배포</span></div>
-              <h3>현장의 조건에 맞는<br />구축과 확장</h3>
-              <p>카메라 위치와 네트워크·보안 환경에 따라 엣지, 온프레미스와 클라우드의 배포 방식을 검토합니다.</p>
-              <ul class="reason-tags"><li>엣지·온프레미스</li><li>클라우드·하이브리드</li></ul>
-              <span class="reason-benefit">도시 인프라에 맞는 확장</span>
-            </article>
+          <div class="industry-approach-copy">
+            <p class="reveal">기존 VMS와 관련 플랫폼의 연동 가능성을 확인하고, 알림을 누가 확인하고 어떤 절차로 대응할지 함께 설계합니다.</p>
           </div>
-          <div class="vaidio-source-note">
-            <p>Vaidio의 스마트시티 솔루션 소개를 기준으로 정리했습니다. 분석·신호 연동·배포 범위는 제품 버전과 현장에 따라 확인하며, 특정 정확도나 사고 예방 효과를 보장하지 않습니다.</p>
-            <a href="https://www.vaidio.ai/solutions/smart-cities" target="_blank" rel="noopener noreferrer">제조사 제품 자료 확인 <span aria-hidden="true">↗</span></a>
+          <div class="validation-panel reveal">
+            <h3>한 지역의 명확한 과제부터 검증하세요.</h3>
+            <p>대상 카메라와 운영 목적을 선정해 분석 결과와 담당자의 활용성을 확인합니다.</p>
           </div>
-        </div>
-      </section>
-      <section class="detail-approach section" id="approach" aria-labelledby="approach-title">
-        <div class="container">
-          <div class="section-heading light-heading">
-            <div><div class="section-label light reveal"><span>04</span> 철통의 도입 지원 / APPROACH</div><h2 class="display-heading reveal" id="approach-title">제품 선택에서 현장 연동까지,<br />철통이 함께 검토합니다.</h2></div>
-            <p class="section-intro reveal">교차로와 도로의 카메라, 관제·신호 운영 환경을 살펴보고,<br />알림 전달부터 교통 데이터의 활용 범위까지 함께 검토합니다.</p>
-          </div>
-          <ol class="approach-grid">
-            <li class="reveal"><span>01</span><h3>현장과 인프라 확인</h3><p>카메라, 네트워크, 영상관리 시스템과 운영 환경을 살펴봅니다.</p></li>
-            <li class="reveal"><span>02</span><h3>분석과 연동 설계</h3><p>우선 해결할 과제를 정하고, 적합한 제품과 API·SDK 연동 방식을 검토합니다.</p></li>
-            <li class="reveal"><span>03</span><h3>운영 시나리오 정리</h3><p>이벤트 알림, 관제 흐름과 시스템 유지보수의 연결 범위를 협의합니다.</p></li>
-          </ol>
         </div>
       </section>
       <section class="detail-contact" id="solution-contact" aria-labelledby="detail-contact-title">
         <div class="container detail-contact-inner">
-          <div><p class="eyebrow">LET’S BUILD TOGETHER</p><h2 id="detail-contact-title">우리 현장에 맞는 AI,<br />함께 찾아볼까요?</h2><p>스마트시티 현장의 고민과 도입 환경을 알려주세요.</p></div>
-          <a class="button button-primary" href="mailto:abraham@chultong.com?subject=%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0%20%EC%86%94%EB%A3%A8%EC%85%98%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98">스마트시티 도입 문의 <span aria-hidden="true">↗</span></a>
+          <div>
+            <p class="eyebrow">LET’S BUILD TOGETHER</p>
+            <h2 id="detail-contact-title">우리 현장에 맞는 AI,<br />함께 찾아볼까요?</h2>
+            <p>한 지역의 명확한 과제부터 검증하세요.<br />관제센터의 우선 과제와 대상 카메라 환경을 알려주세요.</p>
+          </div>
+          <div class="detail-contact-actions">
+            <a class="button button-primary" href="contact.html">스마트시티 AI 프로젝트 문의 <span aria-hidden="true">↗</span></a>
+            <a class="detail-phone-link" href="tel:03180319909">관제센터 전화 상담 <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-main">
-        <a class="brand" href="index.html" aria-label="철통 홈">
-          <img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" />
-          <span>CHULTONG</span>
-        </a>
+        <a class="brand" href="index.html" aria-label="철통 홈"><img class="brand-logo" src="assets/chultong-logo-white.png" alt="" width="414" height="562" /><span>CHULTONG</span></a>
         <p>See clearly. Think ahead. Operate better.</p>
         <nav aria-label="푸터 메뉴">
-          <a href="company.html">회사소개</a>
-          <a href="solutions.html">솔루션</a>
-          <a href="products.html">제품</a>
-          <a href="contact.html">고객문의</a>
+          <a href="products.html">솔루션</a>
+          <a href="solutions.html">산업별</a>
+          <a href="company.html">회사</a>
+          <a href="contact.html">문의</a>
         </nav>
       </div>
-      <div class="container footer-bottom">
-        <span>© <span id="year"></span> CHULTONG. ALL RIGHTS RESERVED.</span>
-        <span>VISION AI · AIOPS · SECURITY</span>
+      <div class="container footer-details"><span>주식회사 철통 · 대표이사 함세진</span><span>경기도 안양시 동안구 안양판교로 20, 305호</span>
+        <a href="tel:03180319909">031-8031-9909</a>
+        <a href="mailto:abraham@chultong.com">abraham@chultong.com</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="year"></span> CHULTONG. ALL RIGHTS RESERVED.</span><span>VIDEO ANALYTICS · AIOPS · COMMAND CENTER</span>
       </div>
     </footer>
     <script src="script.js"></script>

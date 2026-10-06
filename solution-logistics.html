@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="영상 분석으로 ‘사건’을 잡고, AIOps로 ‘시스템’을 지킵니다." />
+    <meta name="description" content="철통은 물류센터의 기존 CCTV를 활용해 안전 관리와 영상 검색 업무를 개선합니다." />
     <meta name="theme-color" content="#06111f" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="AI 시스템 유지관리 | CHULTONG" />
-    <meta property="og:description" content="영상 분석으로 ‘사건’을 잡고, AIOps로 ‘시스템’을 지킵니다." />
+    <meta property="og:title" content="물류 산업별 AI 솔루션 | CHULTONG" />
+    <meta property="og:description" content="철통은 물류센터의 기존 CCTV를 활용해 안전 관리와 영상 검색 업무를 개선합니다." />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
     <link rel="stylesheet" href="styles.css?v=20261006-typography" />
-    <link rel="stylesheet" href="solutions.css?v=20261006-typography" />
+    <link rel="stylesheet" href="solutions.css?v=20261006-industry-images-v2" />
     <link rel="stylesheet" href="pages.css?v=20261006-typography" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <title>AI 시스템 유지관리 | CHULTONG</title>
+    <title>물류 산업별 AI 솔루션 | CHULTONG</title>
     <noscript><style>
         .menu-toggle, .copy-email { display: none !important; }
         @media (max-width: 960px) {
@@ -27,7 +27,7 @@
       </style>
     </noscript>
   </head>
-  <body id="top" class="solution-page category-page" data-page="services">
+  <body id="top" class="solution-page industry-detail-page" data-page="industries">
     <a class="skip-link" href="#main">본문 바로가기</a>
     <div class="scroll-progress" aria-hidden="true"><span></span>
     </div>
@@ -42,7 +42,7 @@
             <div class="nav-dropdown services-dropdown" id="services-menu" hidden>
               <p class="dropdown-label">솔루션</p>
               <a href="product-vision.html"><span>CCTV AI 영상분석</span><small>Video Analytics</small></a>
-              <a href="product-ops.html" aria-current="page"><span>AI 시스템 유지관리</span><small>AIOps</small></a>
+              <a href="product-ops.html"><span>AI 시스템 유지관리</span><small>AIOps</small></a>
               <a href="product-command-center.html"><span>통합 대시보드 &amp; 알림</span><small>Command Center</small></a>
               <a href="products.html" class="dropdown-all">전체 솔루션 보기 <span aria-hidden="true">↗</span></a>
             </div>
@@ -54,7 +54,7 @@
             <div class="nav-dropdown industries-dropdown" id="industries-menu" hidden>
               <p class="dropdown-label">산업별 적용 분야</p>
               <a href="solution-manufacturing.html"><span>제조</span><small>Manufacturing</small></a>
-              <a href="solution-logistics.html"><span>물류</span><small>Logistics</small></a>
+              <a href="solution-logistics.html" aria-current="page"><span>물류</span><small>Logistics</small></a>
               <a href="solution-airport.html"><span>공항</span><small>Airport</small></a>
               <a href="solution-casino.html"><span>카지노</span><small>Casino</small></a>
               <a href="solution-smart-city.html"><span>스마트시티</span><small>Smart City</small></a>
@@ -91,7 +91,7 @@
             </div>
             <div class="mobile-submenu" id="mobile-services-menu" hidden>
               <a href="product-vision.html">CCTV AI 영상분석</a>
-              <a href="product-ops.html" aria-current="page">AI 시스템 유지관리</a>
+              <a href="product-ops.html">AI 시스템 유지관리</a>
               <a href="product-command-center.html">통합 대시보드 &amp; 알림</a>
             </div>
           </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="mobile-submenu" id="mobile-industries-menu" hidden>
               <a href="solution-manufacturing.html">제조</a>
-              <a href="solution-logistics.html">물류</a>
+              <a href="solution-logistics.html" aria-current="page">물류</a>
               <a href="solution-airport.html">공항</a>
               <a href="solution-casino.html">카지노</a>
               <a href="solution-smart-city.html">스마트시티</a>
@@ -128,94 +128,120 @@
       </div>
     </header>
     <main id="main">
-      <section class="catalog-hero" aria-labelledby="page-title">
+      <section class="solution-detail-hero" aria-labelledby="solution-title">
         <div class="container">
           <nav class="breadcrumbs" aria-label="현재 위치">
             <a href="index.html">홈</a><span aria-hidden="true">/</span>
-            <a href="products.html">솔루션</a><span aria-hidden="true">/</span><span aria-current="page">AI 시스템 유지관리</span>
+            <a href="solutions.html">산업별</a><span aria-hidden="true">/</span><span aria-current="page">물류</span>
           </nav>
-          <p class="eyebrow light">AIOPS</p>
-          <h1 id="page-title">시스템 운영까지<br />AI로 자동화.</h1>
-          <p class="catalog-intro">영상 분석으로 ‘사건’을 잡고, AIOps로 ‘시스템’을 지킵니다.</p>
+          <div class="detail-hero-grid">
+            <div class="detail-hero-copy">
+              <p class="eyebrow light">Logistics</p>
+              <h1 id="solution-title">물류 현장의<br /><span>더 안전한 흐름.</span></h1>
+              <p class="detail-hero-description"><strong>사람과 차량이 함께 움직이는 물류 현장, 중요한 상황을 더 쉽게 확인하세요.</strong>철통은 물류센터의 기존 CCTV를 활용해 안전 관리와 영상 검색 업무를 개선합니다.</p>
+              <div class="detail-tags"><span>Video Analytics</span><span>AIOps</span><span>Command Center</span>
+              </div>
+            </div>
+            <figure class="detail-hero-photo">
+              <div class="industry-photo"><img src="assets/logistics-center-ai.jpg" alt="푸른 저녁빛과 따뜻한 조명이 어우러진 물류센터와 상하차 구역" fetchpriority="high" />
+              </div>
+              <figcaption><span class="signal-dot" aria-hidden="true"></span>현장을 읽고, 운영을 연결합니다.<small>CHULTONG / INDUSTRY SOLUTIONS</small>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
-      <nav class="solution-switcher product-switcher" aria-label="솔루션 상세 페이지">
+      <nav class="solution-switcher industry-switcher" aria-label="산업별 페이지">
         <div class="container solution-switcher-inner">
-          <a href="product-vision.html">CCTV AI 영상분석</a>
-          <a href="product-ops.html" aria-current="page">AI 시스템 유지관리</a>
-          <a href="product-command-center.html">통합 대시보드 &amp; 알림</a>
+          <a href="solution-manufacturing.html">제조</a>
+          <a href="solution-logistics.html" aria-current="page">물류</a>
+          <a href="solution-airport.html">공항</a>
+          <a href="solution-casino.html">카지노</a>
+          <a href="solution-smart-city.html">스마트시티</a>
+          <a href="solution-school.html">학교</a>
+          <a href="solution-healthcare.html">병원</a>
+          <a href="solution-hotel.html">호텔</a>
+          <a href="solution-retail.html">매장·리테일</a>
+          <a href="solution-stadium.html">경기장·대형시설</a>
         </div>
       </nav>
-      <section class="section products">
-        <div class="container product-detail-wrap">
-          <article class="solution-card solution-ops reveal" id="service-2" aria-labelledby="service-title-2">
-            <div class="card-topline"><span>SECTOR 02</span><span>AIOPS</span>
-            </div>
-            <div class="solution-visual ops-visual" aria-hidden="true">
-              <div class="ops-orbit orbit-a">
-              </div>
-              <div class="ops-orbit orbit-b">
-              </div>
-              <div class="ops-core"><span>AI</span><small>ACTIVE</small>
-              </div>
-              <div class="ops-node node-a"><i></i>NETWORK</div>
-              <div class="ops-node node-b"><i></i>SERVER</div>
-              <div class="ops-node node-c"><i></i>SECURITY</div>
-            </div>
-            <div class="solution-copy">
-              <div><span class="solution-number">02</span>
-                <h3 id="service-title-2">AI 시스템<br />유지관리<span class="product-english">AIOps</span>
-                </h3>
-                <p>서버·네트워크·스토리지의 신호를 연결해 시스템 운영과 반복 점검을 자동화합니다.</p>
-              </div>
-              <ul>
-                <li>이상 로그·메트릭 탐지</li>
-                <li>자동 티켓 생성과 담당자 할당</li>
-                <li>예측 유지보수와 자동 운영 리포트</li>
-              </ul>
-              <a class="product-contact" href="contact.html">프로젝트 상담하기 <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="catalog-section service-feature-section">
+      <section class="detail-applications section" id="applications">
         <div class="container">
           <div class="section-heading ">
             <div>
-              <div class="section-label  reveal"><span>01</span> 주요 기능 / FEATURES</div>
-              <h2 class="display-heading reveal">현장과 운영에 필요한 기능.</h2>
+              <div class="section-label  reveal"><span>01</span> 현장 과제 / APPLICATIONS</div>
+              <h2 class="display-heading reveal">이런 상황을 검토합니다.</h2>
             </div>
           </div>
-          <div class="catalog-grid service-feature-grid">
-            <article class="catalog-card reveal"><span class="catalog-number">01</span>
-              <h2>이상 로그·메트릭 탐지</h2>
-              <p>서버·네트워크·스토리지 로그에서 이상 패턴을 자동 감지합니다.</p>
+          <div class="application-grid">
+            <article class="application-card reveal">
+              <div class="photo-crop photo-crop--logistics-traffic"><img src="assets/logistics-applications-v2.jpg" alt="안전 난간으로 분리된 물류창고의 지게차와 보행자 동선" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>01 / LOGISTICS</span>
+                <h3>사람과 차량의 동선</h3>
+                <p>보행자와 지게차·차량의 동선이 겹치는 구간</p>
+              </div>
             </article>
-            <article class="catalog-card reveal"><span class="catalog-number">02</span>
-              <h2>자동 티켓 생성 &amp; 라우팅</h2>
-              <p>탐지 시 담당자·팀에 자동 할당하고, 에스컬레이션 규칙을 적용합니다.</p>
+            <article class="application-card reveal">
+              <div class="photo-crop photo-crop--logistics-access"><img src="assets/logistics-applications-v2.jpg" alt="출입 동선과 상하차 차량을 확인할 수 있는 물류센터 출입구" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>02 / LOGISTICS</span>
+                <h3>출입과 혼잡</h3>
+                <p>제한 구역 출입과 출입구 주변 혼잡</p>
+              </div>
             </article>
-            <article class="catalog-card reveal"><span class="catalog-number">03</span>
-              <h2>예측 유지보수</h2>
-              <p>장애 전조 증상을 기반으로 교체·점검 시기를 권고합니다.</p>
+            <article class="application-card reveal">
+              <div class="photo-crop photo-crop--logistics-review" style="--photo-focus-y: -72%;"><img src="assets/logistics-applications-v2.jpg" alt="물류센터 관제실에서 CCTV 영상을 확인하는 담당자" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>03 / LOGISTICS</span>
+                <h3>사고·분실 영상 검색</h3>
+                <p>사고나 분실 관련 영상을 찾는 업무</p>
+              </div>
             </article>
-            <article class="catalog-card reveal"><span class="catalog-number">04</span>
-              <h2>자동 리포트</h2>
-              <p>일·주·월 운영 리포트, SLA 달성률, 인시던트 트렌드를 자동 발행합니다.</p>
+            <article class="application-card reveal">
+              <div class="photo-crop photo-crop--logistics-systems" style="--photo-focus-y: -72%;"><img src="assets/logistics-applications-v2.jpg" alt="물류센터 서버와 네트워크 장비를 점검하는 기술자" loading="lazy" />
+              </div>
+              <div class="application-copy"><span>04 / LOGISTICS</span>
+                <h3>서버·네트워크 상태</h3>
+                <p>영상 서버와 네트워크의 상태 확인</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
-      <section class="detail-contact">
+      <section class="detail-approach section" id="approach">
+        <div class="container">
+          <div class="section-heading light-heading">
+            <div>
+              <div class="section-label light reveal"><span>02</span> 적용과 검증 / APPROACH</div>
+              <h2 class="display-heading reveal">혼잡한 이동 구간부터 시작하세요.</h2>
+            </div>
+          </div>
+          <div class="industry-approach-copy">
+            <p class="reveal">통로·상하차장·출입구 중 우선 구간을 선정하고, 감지 대상과 알림 기준을 정의합니다.</p>
+            <p class="reveal">AI 시스템 유지관리는 고객의 물류 업무시스템과 연동 가능성을 확인해 별도로 설계합니다.</p>
+          </div>
+          <div class="validation-panel reveal">
+            <h3>검증할 항목</h3>
+            <ul>
+              <li>가림과 조명 영향</li>
+              <li>감지 결과</li>
+              <li>알림 빈도</li>
+              <li>영상 검색 시간</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="detail-contact" id="solution-contact" aria-labelledby="detail-contact-title">
         <div class="container detail-contact-inner">
           <div>
             <p class="eyebrow">LET’S BUILD TOGETHER</p>
-            <h2>우리 현장의 AI 적용 가능성을<br />확인하세요.</h2>
-            <p>현재 운영 환경과 해결하고 싶은 문제를 알려주세요.</p>
+            <h2 id="detail-contact-title">우리 현장에 맞는 AI,<br />함께 찾아볼까요?</h2>
+            <p>가장 사고 우려가 크거나 확인이 어려운 구간은 어디인가요?<br />통로·상하차장·출입구의 운영 환경과 확인이 필요한 상황을 알려주세요.</p>
           </div>
           <div class="detail-contact-actions">
-            <a class="button button-primary" href="contact.html">프로젝트 상담 요청 <span aria-hidden="true">↗</span></a>
-            <a class="detail-phone-link" href="tel:03180319909">전화 상담 연결 <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="contact.html">물류센터 AI 적용 문의 <span aria-hidden="true">↗</span></a>
+            <a class="detail-phone-link" href="tel:03180319909">물류 현장 전화 상담 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>

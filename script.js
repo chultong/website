@@ -32,6 +32,7 @@
     const trigger = group.querySelector('[data-dropdown-trigger]');
     const panel = group.querySelector('.nav-dropdown');
     let restoringFocus = false;
+    let closeTimer;
 
     trigger.addEventListener('focus', () => {
       if (!desktop.matches || restoringFocus) return;
@@ -41,12 +42,16 @@
 
     group.addEventListener('pointerenter', (event) => {
       if (!desktop.matches || event.pointerType !== 'mouse') return;
+      window.clearTimeout(closeTimer);
       closeDropdowns(group);
       setDisclosure(trigger, true);
     });
 
     group.addEventListener('pointerleave', () => {
-      if (!group.contains(document.activeElement)) setDisclosure(trigger, false);
+      window.clearTimeout(closeTimer);
+      closeTimer = window.setTimeout(() => {
+        if (!group.matches(':hover') && !group.contains(document.activeElement)) setDisclosure(trigger, false);
+      }, 200);
     });
 
     group.addEventListener('focusout', (event) => {

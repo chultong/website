@@ -134,6 +134,36 @@
   --photo-focus-y: -17.308%;
 }
 
+/* Individual scenes from generated 2 × 2 sheets, excluding center gutters. */
+.photo-crop--logistics-traffic,
+.photo-crop--logistics-access,
+.photo-crop--logistics-review,
+.photo-crop--logistics-systems,
+.photo-crop--sheet-1,
+.photo-crop--sheet-2,
+.photo-crop--sheet-3,
+.photo-crop--sheet-4 {
+  --photo-ratio: 8 / 5;
+  --photo-width: 202.02%;
+  --photo-left: 0%;
+  --photo-top: 0%;
+  --photo-focus-y: -24.75%;
+}
+
+.photo-crop--logistics-access,
+.photo-crop--logistics-systems,
+.photo-crop--sheet-2,
+.photo-crop--sheet-4 {
+  --photo-left: -102.02%;
+}
+
+.photo-crop--logistics-review,
+.photo-crop--logistics-systems,
+.photo-crop--sheet-3,
+.photo-crop--sheet-4 {
+  --photo-focus-y: -75.25%;
+}
+
 .industry-photo {
   position: relative;
   aspect-ratio: 710 / 444;
@@ -327,7 +357,7 @@
 
 .solution-switcher-inner {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
   padding-block: 18px;
 }
